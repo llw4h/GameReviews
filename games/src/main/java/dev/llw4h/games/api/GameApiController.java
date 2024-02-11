@@ -1,9 +1,7 @@
 package dev.llw4h.games.api;
 
 import dev.llw4h.games.model.Game;
-import dev.llw4h.games.service.GameService;
-import org.apache.coyote.Response;
-import org.bson.types.ObjectId;
+import dev.llw4h.games.service.GameServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -19,7 +17,7 @@ import java.util.Optional;
 @RequestMapping("/api/v1/games")
 public class GameApiController {
     @Autowired
-    private GameService gameService;
+    private GameServiceImpl gameService;
 
     @GetMapping
 //    REST API should return proper status codes
