@@ -21,7 +21,7 @@ jobs:
 
     - name: Build with Maven
       run: |
-        mvn -B package --file pom.xml
+        mvn -B package --file games/pom.xml
         mkdir artifacts && cp target/*.jar artifacts
         cd artifacts && ls
 
