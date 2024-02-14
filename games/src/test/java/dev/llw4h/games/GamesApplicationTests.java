@@ -10,13 +10,8 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 @SpringBootTest
 class GamesApplicationTests {
 
-	@Autowired
-	private ApplicationContext applicationContext;
-
 	@Test
 	void contextLoads() {
-		// Basic assertion to verify that the application context is loaded successfully
-		assertNotNull(applicationContext);
 	}
 
 }
