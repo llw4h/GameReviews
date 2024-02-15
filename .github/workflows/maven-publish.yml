@@ -12,6 +12,8 @@ jobs:
     runs-on: ubuntu-latest
     env:
       MONGO_PORT: ${{ secrets.MONGO_PORT }}
+      MONGO_DATABASE: ${{ secrets.MONGO_DATABASE }}
+      MONGO_HOST: ${{ secrets.MONGO_HOST }}
 
     steps:
     - uses: actions/checkout@v4.1.1
