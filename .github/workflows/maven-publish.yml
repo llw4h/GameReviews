@@ -2,9 +2,9 @@ name: Java CI with Maven
 
 on:
   push:
-    branches: [ gr-mongodocker ]
+    branches: [ main ]
   pull_request:
-    branches: [ gr-mongodocker ]
+    branches: [ main ]
 
 jobs:
   build:
