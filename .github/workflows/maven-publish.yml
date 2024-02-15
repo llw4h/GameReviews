@@ -19,6 +19,12 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
 
+    - name: Load environment variables from .env file
+      run: |
+        set -o allexport
+        source .env
+        set +o allexport
+
     - name: Start MongoDB container
       run: docker run -d --name mongodb -p 27017:27017 mongo:latest
 
